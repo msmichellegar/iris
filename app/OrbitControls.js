@@ -56,7 +56,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.keyPanSpeed = 7.0;	// pixels moved per arrow key push
 
 	// Set to true to automatically rotate around the target
-	this.autoRotate = true;
+	this.autoRotate = false;
 	this.autoRotateSpeed = 2.0; // 30 seconds per round when fps is 60
 
 	// How far you can orbit vertically, upper and lower limits.
@@ -514,12 +514,12 @@ THREE.OrbitControls = function ( object, domElement ) {
 				scope.pan( - scope.keyPanSpeed, 0 );
 				scope.update();
 				break;
-
+				
 			case scope.keys.CTRL:
 				//console.log('control pressed');
 				state = STATE.DOLLY;
 				break;
-
+				
 			case scope.keys.SHIFT:
 				//console.log('shift pressed');
 				//state = STATE.PAN;
