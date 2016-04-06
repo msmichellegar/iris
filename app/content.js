@@ -314,8 +314,7 @@ function processScene(scene) {
     var report = new Function("num", scene.userData[0].ga)();
     report(scene.children.length);
 
-    console.log(scene);
-
+    onZoomExtent();
 }
 
 function processLayers(layerInfo) {
