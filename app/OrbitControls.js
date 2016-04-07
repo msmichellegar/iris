@@ -514,12 +514,12 @@ THREE.OrbitControls = function ( object, domElement ) {
 				scope.pan( - scope.keyPanSpeed, 0 );
 				scope.update();
 				break;
-				
+
 			case scope.keys.CTRL:
 				//console.log('control pressed');
 				state = STATE.DOLLY;
 				break;
-				
+
 			case scope.keys.SHIFT:
 				//console.log('shift pressed');
 				//state = STATE.PAN;
